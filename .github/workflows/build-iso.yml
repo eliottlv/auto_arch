@@ -4,11 +4,12 @@ on: push
 
 jobs:
   build-iso:
-    runs-on: archlinux-latest
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+      options: --privileged
     steps:
       - uses: actions/checkout@v2
-        with:
-          repository: 'eliottlv/auto_arch'
 
       - name: Install deps
         run: |
@@ -24,4 +25,4 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: archiso
-          path: out/
+          path: out/*.iso
