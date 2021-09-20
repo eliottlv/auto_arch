@@ -36,4 +36,4 @@ cp ./sha3sum*.pkg.* ../../airootfs/var/lib/pacman/
 cd .. && rm -rf ./sha3sum
 
 cd ..
-rm ./airootfs/var/lib/pacman/*.old ./aur
+rm -rf ./airootfs/var/lib/pacman/*.old ./aur
