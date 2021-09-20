@@ -1,0 +1,27 @@
+name: Build ISO
+
+on: push
+
+jobs:
+  build-iso:
+    runs-on: archlinux-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: 'eliottlv/auto_arch'
+
+      - name: Install deps
+        run: |
+          pacman --noconfirm -Syyu
+          pacman --noconfirm -S archiso
+
+      - name: Get AUR packages
+        run: bash ./get_aur_pkg.sh
+
+      - name: Build rootfs & ISO
+        run: mkarchiso -v .
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: archiso
+          path: out/
