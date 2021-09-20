@@ -15,7 +15,8 @@ jobs:
         run: |
           pacman --noconfirm -Syyu
           pacman --noconfirm -S archiso base-devel git sudo
-          groupadd sudo; useradd -M archbuild; usermod -aG sudo archbuild
+          useradd -M archbuild
+          echo "archbuild ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
       - name: Get AUR packages
         run: bash ./get_aur_pkg.sh
