@@ -35,4 +35,5 @@ repo-add ../../airootfs/var/lib/pacman/aur-repo.db.tar.gz sha3sum*.pkg.*
 cp ./sha3sum*.pkg.* ../../airootfs/var/lib/pacman/
 cd .. && rm -rf ./sha3sum
 
-rm ../airootfs/var/lib/pacman/*.old ./aur
+cd ..
+rm ./airootfs/var/lib/pacman/*.old ./aur
