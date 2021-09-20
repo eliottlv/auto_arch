@@ -14,7 +14,7 @@ jobs:
       - name: Install deps
         run: |
           pacman --noconfirm -Syyu
-          pacman --noconfirm -S archiso base-devel
+          pacman --noconfirm -S archiso base-devel git
 
       - name: Get AUR packages
         run: bash ./get_aur_pkg.sh
