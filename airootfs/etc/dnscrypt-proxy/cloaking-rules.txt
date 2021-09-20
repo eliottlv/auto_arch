@@ -1,0 +1,26 @@
+################################
+#        Cloaking rules        #
+################################
+
+# The following example rules force "safe" (without adult content) search
+# results from Google, Bing and YouTube.
+#
+# This has to be enabled with the `cloaking_rules` parameter in the main
+# configuration file
+
+#eduspot.uvsq.fr        10.42.16.1,10.42.0.1
+pi.hole					192.168.1.1
+
+# Multiple IP entries for the same name are supported.
+# In the following example, the same name maps both to IPv4 and IPv6 addresses:
+
+localhost                127.0.0.1
+localhost                ::1
+
+# For load-balancing, multiple IP addresses of the same class can also be
+# provided using the same format, one <pattern> <ip> pair per line.
+
+# ads.*                 192.168.100.1
+# ads.*                 192.168.100.2
+# ads.*                 ::1
+

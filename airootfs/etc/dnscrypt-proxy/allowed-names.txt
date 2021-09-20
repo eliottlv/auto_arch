@@ -1,0 +1,38 @@
+
+###########################
+#        Allowlist        #
+###########################
+
+## Rules for allowing queries based on name, one per line
+##
+## Example of valid patterns:
+##
+## ads.*         | matches anything with an "ads." prefix
+## *.example.com | matches example.com and all names within that zone such as www.example.com
+## example.com   | identical to the above
+## =example.com  | allows example.com but not *.example.com
+## *sex*         | matches any name containing that substring
+## ads[0-9]*     | matches "ads" followed by one or more digits
+## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
+
+## Time-based rules
+
+# *.youtube.*  @time-to-play
+# facebook.com @play
+
+## Custom
+cultdeadcow.com
+tracking-protection.cdn.mozilla.net
+easylist-downloads.adblockplus.org
+trackersimulator.org
+eviltracker.net
+do-not-tracker.org
+www.instagram.com
+gs.statcounter.com
+code.visualstudio.com
+ad.guard
+t.notif-moncompte-laposte.info
+www.pixeldetracking.com
+openvsxorg.blob.core.windows.net
+cdn.tagcommander.com
+guce.advertising.com

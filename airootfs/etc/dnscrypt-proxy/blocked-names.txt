@@ -1,0 +1,85 @@
+###########################
+#        Blacklist        #
+###########################
+
+## Rules for name-based query blocking, one per line
+##
+## Example of valid patterns:
+##
+## ads.*         | matches anything with an "ads." prefix
+## *.example.com | matches example.com and all names within that zone such as www.example.com
+## example.com   | identical to the above
+## =example.com  | block example.com but not *.example.com
+## *sex*         | matches any name containing that substring
+## ads[0-9]*     | matches "ads" followed by one or more digits
+## ads*.example* | *, ? and [] can be used anywhere, but prefixes/suffixes are faster
+##
+## Time-based rules:
+##
+## *.youtube.*  @time-to-sleep
+## facebook.com @work
+
+## Custom
+
+## Facebook
+*.facebook.net
+#*.facebook.com
+#*.fbcdn.net
+#*.fbcdn.com
+*.fbsbx.com
+*.fb.com
+
+## Google
+*.goo.gl
+*.g.co
+
+## Microsoft
+*.windows.net
+*.gfx.ms
+*.data.microsoft.com
+*.microsoftonline.com
+
+## Track & Ads génériques
+*analytic*
+*advert*
+*adserv*
+*tracking*
+*metric*
+#ad.*
+ads.*
+ad-*
+ads-*
+
+# Ads & tracking
+#*.doubleclick.*
+*.google-analytics.com
+*.googletagservices.com
+*.googleadservices.com
+*.googlesyndication.com
+*.googletagmanager.com
+*.addthis.com
+*.outbrain.com
+*.gravity.com
+*.quantserve.com
+*.browser-update.org
+*.smartadserver.com
+*.xiti.com
+*.tagcommander.*
+*.statcounter.com
+*.2mdn.net
+*.2o7.net
+*.amazon-adsystem.com
+*.taboola.com
+*.omtrdc.net
+*.online-metrix.net
+*.eulerian.*
+*.affex.*
+*smetrics*
+*gravatar.com
+*sentry.io
+
+# Fonts
+fonts.googleapis.com
+
+# Divers
+*stealthwolf*
