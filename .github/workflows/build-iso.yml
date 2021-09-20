@@ -14,7 +14,8 @@ jobs:
       - name: Install deps
         run: |
           pacman --noconfirm -Syyu
-          pacman --noconfirm -S archiso base-devel git
+          pacman --noconfirm -S archiso base-devel git sudo
+          useradd -M archbuild; usermod -aG sudo archbuild
 
       - name: Get AUR packages
         run: bash ./get_aur_pkg.sh
