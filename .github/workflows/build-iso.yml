@@ -1,6 +1,12 @@
 name: Build ISO
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 8 2 * *'
+  
 
 jobs:
   build-iso:
