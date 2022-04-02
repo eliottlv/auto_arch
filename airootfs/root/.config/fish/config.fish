@@ -39,4 +39,4 @@ export MANPAGER=most
 export EDITOR=nano
 
 # Hardened malloc()
-export LD_PRELOAD="/usr/lib/libhardened_malloc.so"
+#export LD_PRELOAD="/usr/lib/libhardened_malloc.so"

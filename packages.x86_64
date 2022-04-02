@@ -104,7 +104,6 @@ wpa_supplicant
 xfsprogs
 
 yay-bin
-hardened-malloc-git
 nwipe
 libkeccak
 sha3sum
