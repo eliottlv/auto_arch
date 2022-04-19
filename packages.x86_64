@@ -107,3 +107,4 @@ yay-bin
 nwipe
 libkeccak
 sha3sum
+hardened_malloc

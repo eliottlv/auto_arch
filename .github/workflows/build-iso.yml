@@ -6,7 +6,6 @@ on:
       - main
   schedule:
     - cron: '0 8 2 * *'
-  
 
 jobs:
   build-iso:

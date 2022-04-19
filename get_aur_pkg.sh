@@ -16,11 +16,11 @@ cp ./yay-bin*.pkg.* ../../airootfs/var/lib/pacman/
 cd ..; rm -rf ./yay-bin
 
 ## Hardened-malloc
-#git clone https://aur.archlinux.org/hardened-malloc-git.git
-#cd hardened-malloc-git; chmod -R 777 .; sudo -u archbuild makepkg -sr --noconfirm
-#repo-add ../../airootfs/var/lib/pacman/aur-repo.db.tar.gz hardened-malloc-git*.pkg.*
-#cp ./hardened-malloc-git*.pkg.* ../../airootfs/var/lib/pacman/
-#cd ..; rm -rf ./hardened-malloc-git
+git clone https://aur.archlinux.org/hardened_malloc.git
+cd hardened_malloc; chmod -R 777 .; sudo -u archbuild makepkg -sr --noconfirm --skippgpcheck
+repo-add ../../airootfs/var/lib/pacman/aur-repo.db.tar.gz hardened_malloc*.pkg.*
+cp ./hardened_malloc*.pkg.* ../../airootfs/var/lib/pacman/
+cd ..; rm -rf ./hardened_malloc
 
 ## Nwipe
 git clone https://aur.archlinux.org/nwipe.git
