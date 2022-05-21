@@ -31,7 +31,7 @@ cd ..; rm -rf ./nwipe
 
 ## Libkeccak
 git clone https://aur.archlinux.org/libkeccak.git
-cd libkeccak; chmod -R 777 .; sudo -u archbuild makepkg -sr --noconfirm
+cd libkeccak; chmod -R 777 .; sudo -u archbuild makepkg -sr --noconfirm --nocheck
 repo-add ../../airootfs/var/lib/pacman/aur-repo.db.tar.gz libkeccak*.pkg.*
 cp ./libkeccak*.pkg.* ../../airootfs/var/lib/pacman/
 cd ..; rm -rf ./libkeccak
