@@ -5,8 +5,7 @@
 set -euo pipefail
 
 rm -rf ./airootfs/var/lib/pacman/*
-
-mkdir ./aur; cd ./aur
+cd ./aur
 
 ## Yay
 git clone https://aur.archlinux.org/yay-bin.git
