@@ -27,7 +27,6 @@ edk2-shell
 efibootmgr
 elinks
 ethtool
-exfat-utils
 exfatprogs
 f2fs-tools
 fatresize
